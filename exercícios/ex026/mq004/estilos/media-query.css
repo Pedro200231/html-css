@@ -48,7 +48,7 @@ img#pc{display: none;}
 
 @media screen and (min-widht: 1200px){ 
   body{
-    background-image: url(imagens/back-tv.jpg);
+    background-image: url(../imagens/back-tv.jpg);
   };
 
     img#phone{display: none;}
