@@ -6,6 +6,52 @@
     <title>Formulário</title>
 </head>
 <body>
-    
+    <h1>Exemplo de Formulário</h1>
+    <form action="cadastro.php" method="post" autocomplete="on">
+        <p>
+            <label for="iest">Estado</label>
+            <select name="Estado" id="iest">
+                <optgroup label="Letra A">
+                    <option value="AC">Acre</option>
+                    <option value="AL">Alagoas</option>
+                    <option value="AM">Amazonas</option>
+                    <option value="AP">Amapá</option>
+                </optgroup>
+                
+                <optgroup label="Letra B">
+                    <option value="BA" selected>Bahia</option>
+                </optgroup>
+                
+                <optgroup label="Letra C">
+                    <option value="CE">Ceará</option>
+                </optgroup>
+                
+                <optgroup label="Letra D">
+                    <option value="DF">Distrito Federal</option>
+                </optgroup>
+            </select>
+        </p>
+
+        <p><label for="iprof"> Profissão: </label>
+        <input type="text" name="prof" id="iprof" list="dprof">
+        <datalist id="dprof">
+            <option value="Analista de Sistemas">
+            <option value="Programador">
+            <option value="Web Designer">
+            <option value="Administrador de Redes">
+            <option value="Administrador de Banco de Dados">
+        </p>
+
+        <p>
+            <label for="itxt">Texto:</label> <br>
+            <textarea name="Texto" id="itxt" cols="30" rows="10" placeholder="Digite seu texto aqui"></textarea>
+        </p>
+
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
 </body>
 </html>
